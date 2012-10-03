@@ -21,7 +21,12 @@ class rssFeed {
 	$xpath = new DOMXPath($xml);
 	$channels = $xpath->query("//rss/channels");
 	if (!is_null($channels)) {
-		echo "found";
+		echo "found\n";
+		foreach ($channels as $channel) {
+			if ($child = $channel->firstChild) {
+				echo 'still working\n';
+			}
+		}
 	} else {
 		echo "not found";
 	}
