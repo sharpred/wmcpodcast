@@ -17,18 +17,6 @@
 		<itunes:category text="Education"></itunes:category>
 		<itunes:category text="Music"></itunes:category>
 		<item>
-			<title>Ave Maria 11/9/2012</title>
-			<itunes:author>Wessex Male Choir</itunes:author>
-			<itunes:subtitle>Ave Maria All Parts</itunes:subtitle>
-			<itunes:summary>Ave Maria All Parts</itunes:summary>
-			<enclosure url="http://www.tuffers.co.uk/wessex/Ave_Maria_11Sep2012.mp3"
-			length="3637978" type="audio/mp3"/>
-			<pubDate>Tue, 11 Sep 2012 19:30:00 GMT</pubDate>
-			<itunes:duration>4:52</itunes:duration>
-			<itunes:keywords>Music, Training</itunes:keywords>
-			<guid>http://www.tuffers.co.uk/wessex/Ave_Maria_11Sep2012.mp3</guid>
-		</item>
-		<item>
 			<title>Ave Maria 25/09/12</title>
 			<itunes:author>Wessex Male Choir</itunes:author>
 			<itunes:subtitle>Ave Maria Rehearsal</itunes:subtitle>
@@ -39,18 +27,6 @@
 			<itunes:duration>28:16</itunes:duration>
 			<itunes:keywords>Music, Training</itunes:keywords>
 			<guid>http://www.tuffers.co.uk/wessex/Ave_Maria-20120925.mp3</guid>
-		</item>
-		<item>
-			<title>Ave Maria Bass and Baritone 11/9/2012</title>
-			<itunes:author>Wessex Male Choir</itunes:author>
-			<itunes:subtitle>Ave Maria Bass and Baritone</itunes:subtitle>
-			<itunes:summary>Ave Maria Bass and Baritone</itunes:summary>
-			<enclosure url="http://www.tuffers.co.uk/wessex/Ave_Maria_Bass_Baritone_11Sep2012.mp3"
-			length="17116477" type="audio/mp3"/>
-			<pubDate>Tue, 11 Sep 2012 19:30:00 GMT</pubDate>
-			<itunes:duration>23:18</itunes:duration>
-			<itunes:keywords>Music, Training</itunes:keywords>
-			<guid>http://www.tuffers.co.uk/wessex/Ave_Maria_Bass_Baritone_11Sep2012.mp3</guid>
 		</item>
 		<item>
 			<title>Ave Maria 18/09/2012</title>
@@ -77,18 +53,6 @@
 			<guid>http://www.tuffers.co.uk/wessex/AveMaria_BassBari_18Sep2012.mp3</guid>
 		</item>
 		<item>
-			<title>Bring Him Home 11/09/2012</title>
-			<itunes:author>Wessex Male Choir</itunes:author>
-			<itunes:subtitle>Bring Him Home Bass and Baritone</itunes:subtitle>
-			<itunes:summary>Bring Him Home Bass and Baritone 11th Sept 2012</itunes:summary>
-			<enclosure url="http://www.tuffers.co.uk/wessex/Bring_Him_Home_Bass_Baritone_11Sep2012.mp3"
-			length="21563097" type="audio/mp3"/>
-			<pubDate>Tue, 11 Sep 2012 19:30:00 GMT</pubDate>
-			<itunes:duration>28:49</itunes:duration>
-			<itunes:keywords>Music, Training</itunes:keywords>
-			<guid>http://www.tuffers.co.uk/wessex/Bring_Him_Home_Bass_Baritone_11Sep2012.mp3</guid>
-		</item>
-		<item>
 			<title>Bring Him Home 18/09/2012</title>
 			<itunes:author>Wessex Male Choir</itunes:author>
 			<itunes:subtitle>Bring Him Home</itunes:subtitle>
@@ -111,18 +75,6 @@
 			<itunes:duration>17:42</itunes:duration>
 			<itunes:keywords>Music, Training</itunes:keywords>
 			<guid>http://www.tuffers.co.uk/wessex/BringHimHome_BassBari_18Sep2012.mp3</guid>
-		</item>
-		<item>
-			<title>Dashenka 11/09/2012</title>
-			<itunes:author>Wessex Male Choir</itunes:author>
-			<itunes:subtitle>Dashenka - all parts</itunes:subtitle>
-			<itunes:summary>Dashenka - all parts</itunes:summary>
-			<enclosure url="http://www.tuffers.co.uk/wessex/Dashenka_11Sep2012.mp3"
-			length="6180301" type="audio/mp3"/>
-			<pubDate>Tue, 11 Sep 2012 19:30:00 GMT</pubDate>
-			<itunes:duration>8:01</itunes:duration>
-			<itunes:keywords>Music, Training</itunes:keywords>
-			<guid>http://www.tuffers.co.uk/wessex/Dashenka_11Sep2012.mp3</guid>
 		</item>
 		<item>
 			<title>Dashenka 18/09/2012</title>
@@ -185,18 +137,6 @@
 			<guid>http://www.tuffers.co.uk/wessex/Pre_Singing_Tips_20110510.mp3</guid>
 		</item>
 		<item>
-			<title>Presto 11/09/2012</title>
-			<itunes:author>Wessex Male Choir</itunes:author>
-			<itunes:subtitle>Presto</itunes:subtitle>
-			<itunes:summary>Daffodils and Mulligan's Musketeers</itunes:summary>
-			<enclosure url="http://www.tuffers.co.uk/wessex/Presto_11Sep2012.mp3"
-			length="18013650" type="audio/mp3"/>
-			<pubDate>Tue, 11 Sep 2012 19:30:00 GMT</pubDate>
-			<itunes:duration>25:32</itunes:duration>
-			<itunes:keywords>Music, Training</itunes:keywords>
-			<guid>http://www.tuffers.co.uk/wessex/Presto_11Sep2012.mp3</guid>
-		</item>
-		<item>
 			<title>Presto 25/09/2012</title>
 			<itunes:author>Wessex Male Choir</itunes:author>
 			<itunes:subtitle>Presto</itunes:subtitle>
@@ -219,18 +159,6 @@
 			<itunes:duration>17:52</itunes:duration>
 			<itunes:keywords>Music, Training</itunes:keywords>
 			<guid>http://www.tuffers.co.uk/wessex/Psalm150_18Sep2012.mp3</guid>
-		</item>
-		<item>
-			<title>Scarborough Fair 11/09/2012</title>
-			<itunes:author>Wessex Male Choir</itunes:author>
-			<itunes:subtitle>Scarborough Fair</itunes:subtitle>
-			<itunes:summary>Scarborough Fair = all parts</itunes:summary>
-			<enclosure url="http://www.tuffers.co.uk/wessex/Scarborough_Fair_11Sep2012.mp3"
-			length="3639817" type="audio/mp3"/>
-			<pubDate>Tue, 11 Sep 2012 19:30:00 GMT</pubDate>
-			<itunes:duration>4:55</itunes:duration>
-			<itunes:keywords>Music, Training</itunes:keywords>
-			<guid>http://www.tuffers.co.uk/wessex/Scarborough_Fair_11Sep2012.mp3</guid>
 		</item>
 		<item>
 			<title>Scarborough Fair 25/09/2012</title>
@@ -279,6 +207,18 @@
 			<itunes:duration>5:30</itunes:duration>
 			<itunes:keywords>Music, Training</itunes:keywords>
 			<guid>http://www.tuffers.co.uk/wessex/WhatWouldIDoWithout_18Sep2012.mp3</guid>
+		</item>
+		<item>
+			<title>Angels-20121002</title>
+			<itunes:author>Wessex Male Choir</itunes:author>
+			<itunes:subtitle>Angels-20121002 pre-concert practice</itunes:subtitle>
+			<itunes:summary>Angels-20121002-pre-concert practice</itunes:summary>
+			<enclosure url="http://www.tuffers.co.uk/wessex/Angels-20121002.mp3"
+			length="4958840" type="audio/mp3"/>
+			<pubDate>Tue, 02 Oct 2012 19:30:00 GMT</pubDate>
+			<itunes:duration>4:49</itunes:duration>
+			<itunes:keywords>Music, Training</itunes:keywords>
+			<guid>http://www.tuffers.co.uk/wessex/Angels-20121002.mp3</guid>
 		</item>
 		<itunes:explicit>no</itunes:explicit>
 		<itunes:block>no</itunes:block>
