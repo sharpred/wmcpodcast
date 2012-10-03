@@ -1,22 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
-	<channel>
-		<title>Wessex Male Choir Rehearsal Recordings</title>
-		<link>http://www.tuffers.co.uk/wessex/recordings.php</link>
-		<language>en-gb</language>
-		<copyright>2012</copyright>
-		<itunes:subtitle>Rehearsal Recordings</itunes:subtitle>
-		<itunes:author>Wessex Male Choir</itunes:author>
-		<itunes:summary>WMC Rehearsal Recordings for Personal Choir Practice.</itunes:summary>
-		<description>Here are some MP3 recordings of the Wessex Male Choir rehearsals that you can download for your own personal use (practice makes perfect!).</description>
-		<itunes:owner>
-			<itunes:name>Wessex Male Choir</itunes:name>
-			<itunes:email>membership@wessexmalechoir.co.uk</itunes:email>
-		</itunes:owner>
-		<itunes:image href="http://www.wessexmalechoir.co.uk/images/logo2.jpg"/>
-		<itunes:category text="Education"></itunes:category>
-		<itunes:category text="Music"></itunes:category>
-		<itunes:explicit>no</itunes:explicit>
-		<itunes:block>no</itunes:block>
-	</channel>
 </rss>
