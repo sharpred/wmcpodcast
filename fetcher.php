@@ -20,9 +20,12 @@ class rssFeed {
 		$host = 'http://www.wessexmp3.co.uk/wessex/';
 		$file = 'recordings.php';
 		$url = $host . $file;
+		$destination = '/Users/paulryanwork/Dropbox/Public/wmc_rehearsals.xml';
 		$xml = new DOMDocument();
 		$xml -> formatOutput = true;
-		// get document element
+		/**
+		 * start to create the XML file
+		 */
 		$rss = $xml -> createElement('rss');
 		$rss -> setAttribute('xmlns:itunes', 'http://www.itunes.com/dtds/podcast-1.0.dtd/');
 		$rss -> setAttribute('version', '2.0');
@@ -169,8 +172,10 @@ class rssFeed {
 		$itemText = $xml -> createTextNode('no');
 		$item -> appendChild($itemText);
 		$channel -> appendChild($item);
-
-		$xml -> save('/Users/paulryanwork/Dropbox/Public/wmc_rehearsals.xml');
+		/**
+		 * file creation finished, now save it to disk
+		 */
+		$xml -> save($destination);
 	}
 
 }
