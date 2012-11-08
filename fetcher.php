@@ -191,11 +191,16 @@ function fetchPage($url) {
 }
 /**
  * @function main
+ * loads the table of mp3's, strips unwanted details from the table and creates a URL of
+ * mp3s
+ * passes mp3 array to rss.createFeed($songs) to create the podcast XML and save it in 
+ * a local (public facing) Dropbox file
  */
 function main() {
 	$host = 'http://www.wessexmp3.co.uk/wessex/';
 	$file = 'recordings.php';
-	$url = $host . $file;	$str = fetchPage($url);
+	$url = $host . $file;
+	$str = fetchPage($url);
 	//strip non breaking space from output (two attempts!)
 	$newstr = trim($str, chr(0xC2) . chr(0xA0));
 	$newstr = preg_replace('/[\xA0]/', '', $str);
