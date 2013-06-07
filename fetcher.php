@@ -26,7 +26,6 @@ function createFeed($feed) {
 	 * http://www.phpeveryday.com/articles/PHP-XML-Adding-XML-Nodes-P414.html
 	 */
 	global $host, $file, $url, $dbxClient;
-	// change $destination to another location if not running it on Paul's iMac :-)
 	$destination = 'tmp/wmc_rehearsals.xml';
 	$xml = new DOMDocument();
 	$xml -> formatOutput = true;
