@@ -3,7 +3,7 @@
 $host = 'http://www.wessexmp3.co.uk/wessex/';
 $file = 'recordings.php';
 $url = $host . $file;
-
+require 'vendor/autoload.php';
 /**
  * @function createFeed
  * converts an array of mp3 files data into an itunes podcast file
