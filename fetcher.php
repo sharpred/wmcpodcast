@@ -5,6 +5,18 @@ $file = 'recordings.php';
 $url = $host . $file;
 require 'vendor/autoload.php';
 /**
+ * set up dropbox client
+ */
+use \Dropbox as dbx;
+$file = "db.auth";
+list($appInfo, $accessToken) = dbx\AuthInfo::loadFromJsonFile($file);
+$dbxConfig = new dbx\Config($appInfo, "wmcpodcaster");
+list($appInfo, $accessToken) = dbx\AuthInfo::loadFromJsonFile($file);
+$dbxClient = new dbx\Client($dbxConfig, $accessToken);
+$accountInfo = $dbxClient->getAccountInfo();
+
+
+/**
  * @function createFeed
  * converts an array of mp3 files data into an itunes podcast file
  */
@@ -13,9 +25,9 @@ function createFeed($feed) {
 	 * ideas from
 	 * http://www.phpeveryday.com/articles/PHP-XML-Adding-XML-Nodes-P414.html
 	 */
-	global $host, $file, $url;
+	global $host, $file, $url, $dbxClient;
 	// change $destination to another location if not running it on Paul's iMac :-)
-	$destination = '/Users/paulryanwork/Dropbox/Public/wmc_rehearsals.xml';
+	$destination = 'tmp/wmc_rehearsals.xml';
 	$xml = new DOMDocument();
 	$xml -> formatOutput = true;
 	/**
@@ -171,6 +183,14 @@ function createFeed($feed) {
 	 * file creation finished, now save it to disk
 	 */
 	$xml -> save($destination);
+	/**
+	 * now save it top dropbox
+	 */
+	$f = fopen($destination, "rb");
+	$result = $dbxClient->uploadFile("/Public/wmc_rehearsals.xml", dbx\WriteMode::force(), $f);
+
+	print_r($result);
+	
 }
 
 /**
@@ -239,6 +259,7 @@ function main() {
 	// don't want the title
 	array_shift($songs);
 	createFeed($songs);
+
 }
 
 main();
