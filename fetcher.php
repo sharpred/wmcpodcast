@@ -15,6 +15,37 @@ list($appInfo, $accessToken) = dbx\AuthInfo::loadFromJsonFile($file);
 $dbxClient = new dbx\Client($dbxConfig, $accessToken);
 $accountInfo = $dbxClient->getAccountInfo();
 
+/**
+ * @checkMyDate
+ * checks that a date is valid and returns today's date if not
+*/
+function checkMyDate($date) {
+
+	try {
+
+		$fields = explode('-', $date);
+
+		if (!checkdate($fields[1], $fields[0], $fields[2])) {
+			
+			throw new Exception('not a date');
+
+		}
+		
+		return $date;
+
+
+	} catch (Exception $ex) {
+		
+		$newdate = Date('d-m-y');
+		
+		var_dump($date);
+
+		return $newdate;
+
+	}
+
+
+}
 
 /**
  * @function createFeed
@@ -112,6 +143,9 @@ function createFeed($feed) {
 		$length = ltrim($entry['length']);
 		$length = str_replace(",", "", $length);
 		$length2 = substr($length, 0);
+		//get last 10 characters to get date of dd-mm-yyyy
+		$pubdate = substr($entry['pubDate'], -10);
+		$pubdate = checkMyDate($pubdate);
 
 		$longSummary = $entry['title'] . ' ' . $entry['summary'];
 		$item = $xml -> createElement("item");
@@ -138,7 +172,7 @@ function createFeed($feed) {
 		$enclosure -> setAttribute('type', "audio/mp3");
 
 		$pubDate = $xml -> createElement("pubDate");
-		$pubDateText = $xml -> createTextNode($entry['pubDate']);
+		$pubDateText = $xml -> createTextNode($pubdate);
 		$pubDate -> appendChild($pubDateText);
 
 		$duration = $xml -> createElement("itunes:duration");
@@ -165,7 +199,7 @@ function createFeed($feed) {
 
 		/**
 		 * add each item
-		 */
+		*/
 		$channel -> appendChild($item);
 
 	}
@@ -180,16 +214,16 @@ function createFeed($feed) {
 	$channel -> appendChild($item);
 	/**
 	 * file creation finished, now save it to disk
-	 */
+	*/
 	$xml -> save($destination);
 	/**
 	 * now save it top dropbox
-	 */
+	*/
 	$f = fopen($destination, "rb");
 	$result = $dbxClient->uploadFile("/Public/wmc_rehearsals.xml", dbx\WriteMode::force(), $f);
 
 	print_r($result);
-	
+
 }
 
 /**
@@ -218,9 +252,6 @@ function fetchPage($url) {
 function main() {
 	global $host, $file, $url;
 	$str = fetchPage($url);
-	//strip non breaking space from output (two attempts!)
-	//$newstr = trim($str, chr(0xC2) . chr(0xA0));
-	//$newstr = preg_replace('/[\xA0]/', '', $str);
 	$doc = new DOMDocument;
 	$doc -> LoadHTML($str);
 	$str = null;
