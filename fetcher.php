@@ -145,7 +145,7 @@ function createFeed($feed) {
 		$length2 = substr($length, 0);
 		//get last 10 characters to get date of dd-mm-yyyy
 		$pubdate = substr($entry['pubDate'], -10);
-		$pubdate = checkMyDate($pubdate);
+		$pubdate = @checkMyDate($pubdate);
 
 		$longSummary = $entry['title'] . ' ' . $entry['summary'];
 		$item = $xml -> createElement("item");
