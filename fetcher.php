@@ -203,6 +203,7 @@ function fetchPage($url) {
 	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, false);
 	curl_setopt($ch, CURLOPT_BINARYTRANSFER, false);
 	$html = curl_exec($ch);
+	$html = str_replace("&nbsp;", "", $html);
 	curl_close($ch);
 	return $html;
 }
@@ -218,10 +219,10 @@ function main() {
 	global $host, $file, $url;
 	$str = fetchPage($url);
 	//strip non breaking space from output (two attempts!)
-	$newstr = trim($str, chr(0xC2) . chr(0xA0));
-	$newstr = preg_replace('/[\xA0]/', '', $str);
+	//$newstr = trim($str, chr(0xC2) . chr(0xA0));
+	//$newstr = preg_replace('/[\xA0]/', '', $str);
 	$doc = new DOMDocument;
-	$doc -> LoadHTML($newstr);
+	$doc -> LoadHTML($str);
 	$str = null;
 	$newstr = null;
 	$headings = Array('title', 'length', 'duration', 'pubDate', 'summary', );
